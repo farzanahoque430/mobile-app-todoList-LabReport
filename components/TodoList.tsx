@@ -59,7 +59,7 @@ const TodoList = () => {
     tasks.length === 0
       ? 'No tasks yet.\nAdd your first task above!'
       : filter === 'active'
-        ? 'All done — nice work! 🎉'
+        ? 'All done — nice work! '
         : 'No completed tasks yet.';
 
   return (

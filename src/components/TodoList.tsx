@@ -68,10 +68,10 @@ const TodoList = () => {
       behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
       <View className="flex-1 px-5 pt-5">
         {/* Header card with progress */}
-        <View className="bg-indigo-600 rounded-3xl p-5 mb-5 shadow-lg">
-          <Text className="text-indigo-200 text-sm font-medium">Today</Text>
-          <Text className="text-white text-3xl font-bold mt-1">My Tasks</Text>
-          <Text className="text-indigo-100 mt-1">
+        <View className="bg-[#C9BBC8] rounded-3xl p-5 mb-5 shadow-lg">
+          <Text className="text-pink-500 text-sm font-medium">Today</Text>
+          <Text className="text-pink-800 text-3xl font-bold mt-1">My Tasks</Text>
+          <Text className="text-pink-700 mt-1">
             {remaining === 0
               ? tasks.length === 0
                 ? 'Start by adding a task'
@@ -80,10 +80,10 @@ const TodoList = () => {
           </Text>
 
           <View className="flex-row items-center mt-4">
-            <View className="flex-1 h-2 bg-indigo-400/50 rounded-full overflow-hidden">
-              <View className="h-2 bg-white rounded-full" style={{ width: `${progress}%` }} />
+            <View className="flex-1 h-2 bg-white/70 rounded-full overflow-hidden">
+              <View className="h-2 bg-pink-500 rounded-full" style={{ width: `${progress}%` }} />
             </View>
-            <Text className="text-white font-semibold ml-3">{progress}%</Text>
+            <Text className="text-pink-800 font-semibold ml-3">{progress}%</Text>
           </View>
         </View>
 
